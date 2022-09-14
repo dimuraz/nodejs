@@ -1,4 +1,12 @@
 {
+  "name": "app_node",
+  "version": "1.0.0",
+  "description": "Node.js express Objection.js Knex.js MySQL",
+  "author": "Dmitri Urazbayev <dmitri.urazbayev@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.1"
   }
