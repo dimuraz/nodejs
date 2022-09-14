@@ -5,7 +5,11 @@
   "author": "Dmitri Urazbayev <dmitri.urazbayev@gmail.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "make-migrate": "npx knex migrate:make init --knexfile ./knex.js",
+    "make-seed": "npx knex seed:make dev --knexfile ./knex.js",
+    "migrate": "npx knex migrate:latest --knexfile ./knex.js",
+    "seed": "npx knex seed:run --knexfile ./knex.js"
   },
   "dependencies": {
     "express": "^4.18.1",
