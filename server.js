@@ -15,10 +15,7 @@ app.use(express.json());
 // Include the routes to express
 app.use("/", routes);
 
-async function init() {
-	app.listen(config.PORT, config.HOST, () => {
-    console.log(`Running on http://${config.HOST}:${config.PORT}`);
-  });
-}
-
-init()
+// Start the server
+app.listen(config.PORT, config.HOST, () => {
+  console.log(`Running on http://${config.HOST}:${config.PORT}`);
+});
