@@ -1,16 +1,17 @@
 const config = require("./config/config");
 
-const development = {
+const knex = {
     development: {
         client: "mysql",
         connection: {
             host: config.database.host,
-            database: config.database.database,
             user: config.database.user,
-            password: config.database.password
+            port : 3306,
+            password: config.database.password,
+            database: config.database.database
         },
         debug: true
     }
 }
 
-module.exports = development;
+module.exports = knex;
