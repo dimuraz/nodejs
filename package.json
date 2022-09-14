@@ -16,5 +16,8 @@
     "knex": "^2.3.0",
     "mysql": "^2.18.1",
     "objection": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
   }
 }
